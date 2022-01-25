@@ -283,11 +283,11 @@ let data = {
 //  2- You need to round the average to the nearest lower number 
 
 const classesAvg = (data) => {
-    for(let i = 0 ; data.grades.length;i++){
-        for(let j = 0 ; j<data.grades[i].length;j++){
-            for(let k = 0 ; k<data.grades[i].classes[])
-        }
-    }
+    // for(let i = 0 ; data.grades.length;i++){
+    //     for(let j = 0 ; j<data.grades[i].length;j++){
+    //         for(let k = 0 ; k<data.grades[i].classes[])
+    //     }
+    // }
 };
 
 module.exports = { objLat, cvFormatter, applicationsStatics, classesAvg };
