@@ -283,11 +283,15 @@ let data = {
 //  2- You need to round the average to the nearest lower number 
 
 const classesAvg = (data) => {
-    // for(let i = 0 ; data.grades.length;i++){
-    //     for(let j = 0 ; j<data.grades[i].length;j++){
-    //         for(let k = 0 ; k<data.grades[i].classes[])
-    //     }
-    // }
+    for(let i = 0 ; i<data.grades.length;i++){
+        for(let j = 0 ; j<data.grades[i].classes.length;j++){
+            const average = (array) => array.reduce((a, b) => a + b) / array.length; 
+            data.grades[i].classes[j].avg = Math.floor(average(data.grades[i].classes[j].classScores));
+        
+    
+        }
+    }
+    return data;
 };
 
 module.exports = { objLat, cvFormatter, applicationsStatics, classesAvg };
